@@ -1,0 +1,12 @@
+body {
+    background-color: olivedrab;
+  }
+  
+  .top, .hours, .copyright {
+    color: whitesmoke;
+  }
+  
+  .nav {
+    float: right;
+  
+  }
