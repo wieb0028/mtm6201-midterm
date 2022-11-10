@@ -1,46 +1,46 @@
-body {
+body { /* this section makes the body of the website green and all the text the same */
   background-color: rgb(82, 146, 69);
   font-family: 'Times New Roman', Times, serif ;
   }
 
 .skiplinks{
-  list-style: none;
+  list-style: none; /* removes any defult layout for the list of skiplinks */
   margin: 0;
   padding: 0;
   }
 
 .skiplinks a{
-  position: absolute;
-  top: -4em;
+  position: absolute; /* keeps the skiplinks in the same spot of the page */
+  top: -4em; /* Keeps the skiplinks hidden from those who do not wish to see it */
   padding: .5em 1em;
-  font-weight: bold;
+  font-weight: bold; /* Makes the font strong and easy to read */
   background-color: whitesmoke;
   color:black;
   }
 
-.skiplinks a:focus{
+.skiplinks a:focus{ /* this section makes it so that when the tab button is hit the skip links appear*/
   top: 0;
   }
 
-header,footer, .hours, .copyright, p {
+header,footer, .hours, .copyright, p { /* this section makes all my text white */
   color: whitesmoke;
   }
 
-.logo {
+.logo { /* this section sets the logo into a position where id like it to be */
   display: flex;
   float: left;
   border-style: solid;
-  border-color: rgb(119, 90, 126);
+  border-color: rgb(119, 90, 126); /* all border elements are surrounding my logo, changing the border color, and curving the edges */
   border-width: 3px;
   border-radius: 25px;
   font-size: 20px;
 }
-.logo:active{
+.logo:active{ /* this section creats an initial animation time duration for when the logo is being pressed down on */
   animation-duration: 1.5s;
   animation-name: activelogo;
   animation-iteration-count: infinite;
 }
-@keyframes activelogo{
+@keyframes activelogo{ /* this section is the actual animation my logo preforms when pressed down on. It grows downward then swigs a little to the side the shrinks upwards */
   25%{
   transform: scale(1.3, 1.3) translate(0, 30px);
   }
@@ -51,7 +51,7 @@ header,footer, .hours, .copyright, p {
   transform: scale(0.5, 0.5) translate(0px,-10px);
   }
 }
-nav{
+nav{ /* this section is based on adding a border alongside the bottom of my navigation section */
   border-style: solid;
   border-color: rgb(119, 90, 126);
   border-bottom-width: 2.5px; 
