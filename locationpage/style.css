@@ -21,7 +21,7 @@ body {
     top: 0;
     }
 
-header,footer, .hours, .copyright, p {
+header,footer, .hours, .copyright, p, h2 {
     color: whitesmoke;
     }
       
@@ -62,12 +62,30 @@ header {
     display: flex;
     justify-content: space-between;
     }
+h2 {
+    font-size: 30px;
+}
+.map, .location-title {
+  padding-top: 10px;
+  margin: auto;
+  width: 50%;
+}
+
+footer{ 
+    position:fixed;
+    padding-top: 50px;
+  }
 @media screen and (max-width: 900px) {
     .logo {
       font-size: 15px;
     }
     nav ,a {
       font-size: 22px;
+    }
+    .map, .location-title {
+      padding-top: 10px;
+      margin: auto;
+      width: -50px;
     }
         
 }
@@ -78,4 +96,12 @@ header {
     nav ,a {
       font-size: 40px;
     }
+    h2 {
+      font-size: 40px;
+  }
+  .map, .location-title {
+    padding-top: 10px;
+    margin: auto;
+    width: 40%;
+  }
   }
