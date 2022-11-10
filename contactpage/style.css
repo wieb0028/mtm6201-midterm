@@ -44,7 +44,7 @@ nav{
     border-left-width: 0px;
   }
       
-nav ,a {
+nav ,a, h2 {
     font-size: 25px;
     text-decoration: none;
     display: block;
@@ -62,12 +62,45 @@ header {
     display: flex;
     justify-content: space-between;
     }
+.mid {
+    padding-top: 10px;
+    margin: auto;
+    width: 50%;
+}
+h2 {
+    font-size: 30px;
+}
+.name-text, .email-text, .message-text {
+    padding-top: 8px ;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.name-bar, .email-bar , .message-bar, .send { /* edits the padding around the text bar */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 11px;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+footer{ 
+    position:fixed;
+    padding-top: 50px;
+  }
 @media screen and (max-width: 900px) {
     .logo {
       font-size: 15px;
     }
     nav ,a {
       font-size: 22px;
+    }
+    input[type=text] {
+        width: 100%;
     }
         
 }
@@ -77,5 +110,11 @@ header {
     }
     nav ,a {
       font-size: 40px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .name-text, .email-text, .message-text {
+        font-size: 25px;
     }
   }
