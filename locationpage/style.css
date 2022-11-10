@@ -76,45 +76,45 @@ nav li {
 header {
     display: flex;
     justify-content: space-between;
-    }
+    } /* Lines 1-79 are the same as the css style sheet for my home page, comments for these lines can be found there */
 h2 {
-    font-size: 30px;
+    font-size: 30px;/* changes font size of the page header */
 }
-.map, .location-title {
+.map, .location-title { /* changes how the map is displayed on the web page */
   padding-top: 10px;
   margin: auto;
   width: 50%;
 }
 
-footer{ 
+footer{ /* keeps the footer at the bottom of the page */
     position:fixed;
     padding-top: 50px;
   }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { /* all content in this section is only applied to smaller screen sizes */
     .logo {
-      font-size: 15px;
+      font-size: 15px;/* changes logo size */
     }
     nav ,a {
-      font-size: 22px;
+      font-size: 22px;/* changes navigation size */
     }
-    .map, .location-title {
+    .map, .location-title { /* changes how the map is displayed to make it easier to see on small devices */
       padding-top: 10px;
       margin: auto;
       width: 0px;
     }
         
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) { /* all content in this section is only applied to larger screen sizes */
     .logo {
-      font-size: 30px;
+      font-size: 30px;/* changes logo size */
     }
     nav ,a {
-      font-size: 40px;
+      font-size: 40px;/* changes navigation size */
     }
     h2 {
-      font-size: 40px;
+      font-size: 40px;/* changes header size */
   }
-  .map, .location-title {
+  .map, .location-title { /* changes how the map is displayed to make it easier to see on large devices */
     padding-top: 10px;
     margin: auto;
     width: 40%;

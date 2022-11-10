@@ -76,60 +76,60 @@ nav li {
 header {
     display: flex;
     justify-content: space-between;
-    }
-.mid {
+    } /* Lines 1-79 are the same as the css style sheet for my home page, comments for these lines can be found there */
+.mid { /* section organizes the middle of the page */
     padding-top: 10px;
     margin: auto;
     width: 50%;
 }
 h2 {
-    font-size: 30px;
+    font-size: 30px;  /* changes font size of the page header */
 }
-.name-text, .email-text, .message-text {
+.name-text, .email-text, .message-text { /* edits the padding around the contact sheet */
     padding-top: 8px ;
     padding-left: 15px;
     font-size: 20px;
 }
-.name-bar, .email-bar , .message-bar, .send { /* edits the padding around the text bar */
+.name-bar, .email-bar , .message-bar, .send { /* edits the padding around the text bars */
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 15px;
 }
 
-input[type=text] {
+input[type=text] { /* determins the width, size and curvature on the text bars */
   width: 80%;
   padding: 11px;
   border-radius: 5px;
   margin-top: 6px;
   margin-bottom: 16px;
 }
-footer{ 
+footer{ /* keeps the footer at the bottom of the page */
     position:fixed;
     padding-top: 50px;
   }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { /* all content in this section is only applied to smaller screen sizes */
     .logo {
-      font-size: 15px;
+      font-size: 15px;/* changes logo size */
     }
     nav ,a {
-      font-size: 22px;
+      font-size: 22px;/* changes navigation size */
     }
-    input[type=text] {
+    input[type=text] { /* changes width of the contact form */
         width: 100%;
     }
         
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) { /* all content in this section is only applied to larger screen sizes */
     .logo {
-      font-size: 30px;
+      font-size: 30px;/* changes logo size */
     }
     nav ,a {
-      font-size: 40px;
+      font-size: 40px;/* changes navigation size */
     }
     h2 {
-        font-size: 40px;
+        font-size: 40px;/* changes header size */
     }
-    .name-text, .email-text, .message-text {
+    .name-text, .email-text, .message-text { /* changes font size  on the contact form*/
         font-size: 25px;
     }
   }

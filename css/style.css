@@ -81,30 +81,30 @@ header {  /* applies a flexbox to my header to space the items out */
 .mid { /* applies flex to the middle of my website */
   display: flex;
 }
-.main {
+.main { /* applies flex to the main content of my website */
   display: flex;
   justify-content: center;
 }
-.hours {
+.hours { /* adds space between this aspect and the logo */
   padding-top: 20px;
   font-size: 20px;
   padding-left: 10px;
 }
 img{
-  width: 260px;
+  width: 260px; /* width and height determin the size that the image will display*/
   height: 150px;
-  border-radius: 25px;
-  border: 3px solid rgb(119, 90, 126);
-  animation-duration: 1.4s;
-  animation-name: jump;
+  border-radius: 25px;  /* adds a curve to the border of the pictures */
+  border: 3px solid rgb(119, 90, 126); /* adds color to the border of the pictures */
+  animation-duration: 1.4s; /* determins the length of the animation */
+  animation-name: jump;/* determins the name of the animation */
   animation-iteration-count: infinite;
 }
-@keyframes jump{
+@keyframes jump{ /* animates the photos to move slightily up and down at all times to draw the attention of the user */
   50% { 
    transform: translate(0, 15px);
  }
 }
-.info1, .info2, .info3 {
+.info1, .info2, .info3 { /* this section alignes all the photos/info of the photos to be in a vertical flexbox */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,31 +117,31 @@ img{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-footer{ 
+footer{ /* keeps the footer at the bottom of the page */
   position:fixed;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { /* all content in this section is only applied to smaller screen sizes */
   .logo {
-    font-size: 15px;
+    font-size: 15px; /* changes logo size */
   }
   nav ,a {
-    font-size: 22px;
+    font-size: 22px;/* changes navigation size */
   }
   .hours{
-    font-size: 16px;
+    font-size: 16px; /* changes font size for the hours */
   }
-  .main{
+  .main{ /* displays the content vertically instead of horizontal */
     display: flex;
     flex-direction: column;
   }
   img{
     width: 200px;
-    height: 130px;
+    height: 130px; /* width and height determin the size that the image will display*/
     border-radius: 25px;
     border: 3px solid rgb(119, 90, 126);
   }
-  .info1, .info2, .info3 {
+  .info1, .info2, .info3 { /* decreases text size for main info */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,23 +152,23 @@ footer{
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) { /* all content in this section is only applied to larger screen sizes */
   .logo {
-    font-size: 30px;
+    font-size: 30px; /* changes logo size */
   }
   nav ,a {
-    font-size: 40px;
+    font-size: 40px;/* changes navigation size */
   }
   .hours{
-    font-size: 22px;
+    font-size: 22px;/* changes font size for the hours */
   }
   img{
-    width: 300px;
+    width: 300px; /* width and height determin the size that the image will display*/
     height: 160px;
     border-radius: 25px;
     border: 3px solid rgb(119, 90, 126);
   }
-  .info1, .info2, .info3 {
+  .info1, .info2, .info3 { /* increases text size for main info */
     display: flex;
     flex-direction: column;
     justify-content: center;
